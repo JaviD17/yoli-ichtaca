@@ -21,10 +21,10 @@ const Hero = () => {
       <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center relative">
         <AspectRatio ratio={16 / 9}>
           <Image
-            src="/assets/hero-1.png"
+            src="/assets/hero-5.png"
             alt="gym room"
             fill
-            className="rounded-md object-cover"
+            className="rounded-lg object-cover object-top"
           />
         </AspectRatio>
 
@@ -67,14 +67,14 @@ const Hero = () => {
       <div className="lg:hidden flex flex-col items-center justify-center relative">
         <AspectRatio ratio={2 / 3}>
           <Image
-            src="/assets/hero-1.png"
+            src="/assets/hero-5.png"
             alt="gym room"
             fill
             className="rounded-md object-cover"
           />
         </AspectRatio>
 
-        <div className="absolute top-10 z-20 text-slate-50 bg-slate-950 bg-opacity-85 p-6 rounded-md text-center">
+        <div className="absolute top-10 z-20 text-slate-50 bg-slate-950 bg-opacity-85 p-6 rounded-md text-center max-w-xs">
           <h3 className="text-2xl lg:text-5xl font-semibold tracking-wide bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text mb-2">
             Yoli Ichtaca:
           </h3>
@@ -91,7 +91,7 @@ const Hero = () => {
             height={240}
             width={240}
             onClick={() => router.push("/")}
-            className={`${styles.box}`}
+            className={`${styles.box2}`}
           />
         </div>
 

@@ -7,8 +7,21 @@
   }
 }
 
+@keyframes bounce2 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-25px);
+  }
+}
+
 .box {
   animation: bounce 750ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+.box2 {
+  animation: bounce2 750ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
 }
 
 @keyframes infinite-spinning {
@@ -21,5 +34,5 @@
 }
 
 .spin {
-  animation: infinite-spinning 1000ms 1000ms infinite
+  animation: infinite-spinning 1000ms 1000ms infinite;
 }

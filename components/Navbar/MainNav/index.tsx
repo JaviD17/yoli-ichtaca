@@ -72,7 +72,7 @@ const NavRoutes = () => {
   return (
     <>
       {/* Desktop Nav */}
-      <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-between lg:py-4 bg-slate-100">
+      <div className="relative z-20 hidden lg:flex lg:flex-row lg:items-center lg:justify-between lg:py-4 bg-slate-950/50">
         <Image
           src={"/assets/logo-white.svg"}
           alt="logo"
@@ -89,9 +89,7 @@ const NavRoutes = () => {
               href={route.href}
               className={cn(
                 `text-lg tracking-widest`,
-                route.active
-                  ? "font-semibold text-foreground"
-                  : "text-slate-600"
+                route.active ? "font-semibold text-[#7D87F2]" : "text-slate-50"
               )}
             >
               {route.label}

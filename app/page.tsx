@@ -33,14 +33,14 @@ const services = [
 
 const Home = () => {
   return (
-    <>
+    <div className="relative z-20">
       <Hero />
       <div className="w-11/12 mx-auto">
-        <Separator className="bg-slate-950" />
+        <Separator className="bg-slate-50" />
       </div>
 
       <div className="lg:py-12 py-4 sm:py-6 md:py-8 max-w-7xl mx-auto">
-        <h3 className="lg:pb-12 pb-4 sm:pb-6 md:pb-8 text-center text-4xl font-semibold tracking-wide bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-teal-300 via-cyan-100 to-cyan-800 text-transparent bg-clip-text">
+        <h3 className="lg:pb-12 pb-4 sm:pb-6 md:pb-8 text-center text-4xl font-semibold tracking-wide bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-red-900 via-violet-200 to-orange-500 text-transparent bg-clip-text">
           Services
         </h3>
         {/* card grid container */}
@@ -48,16 +48,18 @@ const Home = () => {
           {services.map((service) => (
             <Link key={service.href} href={service.href}>
               <Card
-                className="bg-no-repeat bg-cover bg-center relative h-[640px] hover:scale-105 active:scale-95 transition"
+                className="group bg-no-repeat bg-cover bg-center relative h-[640px] hover:scale-105 active:scale-95 transition"
                 style={{
                   backgroundImage: "url(/assets/yoli-services-1.webp)",
                 }}
               >
-                <CardHeader className="text-center bg-slate-950 absolute top-0 z-20 rounded-t-md">
-                  <CardTitle className="text-slate-50 tracking-wide">
+                <CardHeader className="text-center bg-slate-950/70 absolute top-0 z-20 rounded-t-lg">
+                  <CardTitle
+                    className={`text-slate-50 tracking-wide group-hover:bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-red-900 via-violet-200 to-orange-500 group-hover:text-transparent group-hover:bg-clip-text`}
+                  >
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-slate-400">
+                  <CardDescription className="text-slate-300 text-lg">
                     {service.desc}
                   </CardDescription>
                 </CardHeader>
@@ -75,7 +77,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

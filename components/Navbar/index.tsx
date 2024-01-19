@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <MainNav />
-      <Separator />
+      <Separator className="bg-[#7D87F2]" />
     </>
   );
 };

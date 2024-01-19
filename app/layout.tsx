@@ -21,8 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${urbanist.className} min-h-screen`}>
-        <Navbar />
-        <main className="bg-slate-50">{children}</main>
+        <main
+          className="bg-no-repeat bg-cover bg-center relative"
+          style={{ backgroundImage: `url(/assets/concrete-bg.webp)` }}
+        >
+          <div className="bg-slate-950/70 absolute inset-0 z-0" />
+          <Navbar />
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
