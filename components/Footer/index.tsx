@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "../ui/separator";
 
+import styles from "./index.module.css";
+
 const Footer = () => {
   const footerList = [
     {
@@ -55,7 +57,9 @@ const Footer = () => {
       </div> */}
 
       <div className="bg-slate-950 text-center">
-        <h3 className="py-4 sm:py-6 md:py-8 lg:py-12 text-3xl lg:text-7xl font-semibold tracking-wide bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text mb-2">
+        <h3
+          className={`${styles.box} py-4 sm:py-6 md:py-8 lg:py-12 text-3xl lg:text-7xl font-semibold tracking-widest bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text mb-2`}
+        >
           Yoli Ichtaca
         </h3>
 
