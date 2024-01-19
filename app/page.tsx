@@ -11,23 +11,25 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
-import { url } from "inspector";
 
 const services = [
   {
     title: "One-on-One sessions",
     desc: "Tailored individual training sessions focusing on the client's specific fitness goals and needs.",
     href: "/services/one-on-one-sessions",
+    url: "/assets/service-1.png",
   },
   {
     title: "Nutritional Guidance",
     desc: "Developing personalized nutrition plans to complement clients' fitness goals and enhance overall well-being.",
     href: "/services/nutritional-guidance",
+    url: "/assets/service-2.png",
   },
   {
     title: "Lifestyle Coaching",
     desc: "Incorporating holistic lifestyle coaching to address factors beyond fitness, such as stress management, sleep, and overall well-being.",
     href: "/services/lifestyle-coaching",
+    url: "/assets/service-3.png",
   },
 ];
 
@@ -50,7 +52,7 @@ const Home = () => {
               <Card
                 className="group bg-no-repeat bg-cover bg-center relative h-[640px] hover:scale-105 active:scale-95 transition"
                 style={{
-                  backgroundImage: "url(/assets/yoli-services-1.webp)",
+                  backgroundImage: `url(${service.url})`,
                 }}
               >
                 <CardHeader className="text-center bg-slate-950/70 absolute top-0 z-20 rounded-t-lg">
