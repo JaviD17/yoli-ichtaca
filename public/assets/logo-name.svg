@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.2em;
+      }
+
+      .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        fill: #fff;
+        font-family: EthnocentricLt-Regular, Ethnocentric;
+        font-size: 36px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" width="320" height="320"/>
+  <text class="cls-6" transform="translate(6.03 170.43)"><tspan class="cls-3" x="0" y="0">Y</tspan><tspan x="31.54" y="0">ŌlĪ ich</tspan><tspan class="cls-4" x="184.46" y="0">t</tspan><tspan class="cls-2" x="207.72" y="0">a</tspan><tspan class="cls-1" x="241.02" y="0">c</tspan><tspan x="271.11" y="0">a</tspan></text>
+</svg>
