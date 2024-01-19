@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Separator } from "../ui/separator";
 
 const Footer = () => {
   const footerList = [
@@ -53,22 +54,28 @@ const Footer = () => {
         </div>
       </div> */}
 
-      <h3 className="text-2xl lg:text-5xl font-semibold tracking-wide bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text mb-2">
-        Yoli Ichtaca:
-      </h3>
+      <div className="bg-slate-950 text-center">
+        <h3 className="py-4 sm:py-6 md:py-8 lg:py-12 text-3xl lg:text-7xl font-semibold tracking-wide bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text mb-2">
+          Yoli Ichtaca
+        </h3>
 
-      <div className="bg-black h-60">
+        <div className="w-11/12 mx-auto ">
+          <Separator className="bg-slate-50" />
+        </div>
+      </div>
+
+      <div className="bg-slate-950 h-fit py-4 sm:py-6 md:py-8 lg:py-12 overflow-hidden">
         <ul className="flex justify-around uppercase text-xl">
           {footerList.map((item) => (
             <li key={item.label}>
-              <h4 className="mb-8 text-slate-50 tracking-widest">
+              <h4 className="pb-8 text-slate-50 tracking-widest">
                 {item.label}
               </h4>
               <ul>
                 {item.subItems?.map((subItem) => (
                   <li
                     key={subItem.href}
-                    className="text-sm text-slate-300 mb-4"
+                    className="text-sm text-slate-300 pb-4"
                   >
                     <Link href={subItem.href}>{subItem.label}</Link>
                   </li>
