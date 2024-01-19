@@ -1,0 +1,25 @@
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+.box {
+  animation: bounce 750ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.spin {
+  animation: infinite-spinning 1000ms 1000ms infinite
+}
