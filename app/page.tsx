@@ -46,7 +46,7 @@ const Home = () => {
           Services
         </h3>
         {/* card grid container */}
-        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-8 lg:px-0 px-6">
           {services.map((service) => (
             <Link key={service.href} href={service.href}>
               <Card
