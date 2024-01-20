@@ -114,7 +114,7 @@ const NavRoutes = () => {
         {/* menu */}
         <Sheet>
           <SheetTrigger asChild className="ml-2">
-            <MenuSquareIcon size={48} className="text-slate-950" />
+            <MenuSquareIcon size={48} className="text-slate-50" />
           </SheetTrigger>
           <SheetContent side={"left"} className="bg-slate-50">
             <SheetHeader className="pb-4">
