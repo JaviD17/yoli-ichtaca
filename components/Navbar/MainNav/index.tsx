@@ -107,7 +107,7 @@ const NavRoutes = () => {
       </div>
 
       {/* Mobile Nav */}
-      <div className="lg:hidden flex justify-between items-center py-3 bg-slate-100">
+      <div className="relative z-20 lg:hidden flex justify-between items-center py-3 bg-slate-100">
         {/* menu */}
         <Sheet>
           <SheetTrigger asChild className="ml-2">
