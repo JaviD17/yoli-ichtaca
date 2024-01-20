@@ -89,7 +89,10 @@ const NavRoutes = () => {
               href={route.href}
               className={cn(
                 `text-lg tracking-widest`,
-                route.active ? "font-semibold text-[#7D87F2]" : "text-slate-50"
+                route.active
+                  ? "font-semibold bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text"
+                  : "text-slate-50"
+                // route.active ? "font-semibold text-[#7D87F2]" : "text-slate-50"
               )}
             >
               {route.label}
