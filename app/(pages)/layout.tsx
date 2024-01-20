@@ -8,5 +8,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <main className="min-h-screen">{children}</main>;
+  return <main className="min-h-screen relative z-20">{children}</main>;
 }
