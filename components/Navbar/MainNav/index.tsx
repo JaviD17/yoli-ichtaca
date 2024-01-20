@@ -100,14 +100,17 @@ const NavRoutes = () => {
           ))}
         </div>
 
-        <Avatar className="h-12 w-12 hover:cursor-pointer" onClick={() => router.push("/profile")}>
+        <Avatar
+          className="h-12 w-12 hover:cursor-pointer"
+          onClick={() => router.push("/profile")}
+        >
           <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
           <AvatarFallback>JD</AvatarFallback>
         </Avatar>
       </div>
 
       {/* Mobile Nav */}
-      <div className="relative z-20 lg:hidden flex justify-between items-center py-3 bg-slate-100">
+      <div className="relative z-20 lg:hidden flex justify-between items-center py-3 bg-slate-950/50">
         {/* menu */}
         <Sheet>
           <SheetTrigger asChild className="ml-2">
