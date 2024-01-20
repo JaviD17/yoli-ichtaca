@@ -100,7 +100,7 @@ const NavRoutes = () => {
           ))}
         </div>
 
-        <Avatar className="h-12 w-12" onClick={() => router.push("/profile")}>
+        <Avatar className="h-12 w-12 hover:cursor-pointer" onClick={() => router.push("/profile")}>
           <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
           <AvatarFallback>JD</AvatarFallback>
         </Avatar>

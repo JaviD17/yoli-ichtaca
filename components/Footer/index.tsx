@@ -69,17 +69,17 @@ const Footer = () => {
       </div>
 
       <div className="bg-slate-950 h-fit py-4 sm:py-6 md:py-8 lg:py-12 overflow-hidden">
-        <ul className="flex justify-around uppercase text-xl">
+        <ul className="flex lg:flex-row flex-col lg:justify-around pl-6 lg:pl-0 uppercase">
           {footerList.map((item) => (
-            <li key={item.label}>
-              <h4 className="pb-8 text-slate-50 tracking-widest">
+            <li key={item.label} className="pb-6 lg:pb-0">
+              <h4 className="pb-4 lg:pb-8 text-slate-50 tracking-widest text-xl lg:text-2xl">
                 {item.label}
               </h4>
               <ul>
                 {item.subItems?.map((subItem) => (
                   <li
                     key={subItem.href}
-                    className="text-sm text-slate-300 pb-4"
+                    className="text-xs lg:text-sm text-slate-300 pb-4"
                   >
                     <Link href={subItem.href}>{subItem.label}</Link>
                   </li>
