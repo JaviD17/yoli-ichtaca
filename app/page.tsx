@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
+import ServiceCardContainer from "@/components/ServiceCardContainer";
 
 const services = [
   {
@@ -46,38 +47,7 @@ const Home = () => {
           Services
         </h3>
         {/* card grid container */}
-        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-8 lg:px-0 px-6">
-          {services.map((service) => (
-            <Link key={service.href} href={service.href}>
-              <Card
-                className="group bg-no-repeat bg-cover bg-center relative h-[480px] hover:scale-105 active:scale-95 transition"
-                style={{
-                  backgroundImage: `url(${service.url})`,
-                }}
-              >
-                <CardHeader className="text-center bg-slate-950/70 absolute top-0 z-20 rounded-t-lg">
-                  <CardTitle
-                    className={`text-slate-50 tracking-wide group-hover:bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-red-900 via-violet-200 to-orange-500 group-hover:text-transparent group-hover:bg-clip-text`}
-                  >
-                    {service.title}
-                  </CardTitle>
-                  <CardDescription className="text-slate-300 text-lg">
-                    {service.desc}
-                  </CardDescription>
-                </CardHeader>
-                <div className="absolute bottom-0 z-20 text-white">
-                  <CardContent>
-                    <p className="text-xl">Card Content</p>
-                  </CardContent>
-                  <CardFooter>
-                    <p>Card Footer</p>
-                  </CardFooter>
-                </div>
-                <div className="rounded-md bg-slate-950/60 absolute inset-0 z-10" />
-              </Card>
-            </Link>
-          ))}
-        </div>
+        <ServiceCardContainer />
       </div>
     </div>
   );
