@@ -50,7 +50,7 @@ const Home = () => {
           {services.map((service) => (
             <Link key={service.href} href={service.href}>
               <Card
-                className="group bg-no-repeat bg-cover bg-center relative h-[640px] hover:scale-105 active:scale-95 transition"
+                className="group bg-no-repeat bg-cover bg-center relative h-[480px] hover:scale-105 active:scale-95 transition"
                 style={{
                   backgroundImage: `url(${service.url})`,
                 }}
