@@ -114,16 +114,19 @@ const NavRoutes = () => {
         {/* menu */}
         <Sheet>
           <SheetTrigger asChild className="ml-2">
-            <MenuSquareIcon size={48} className="text-slate-50" />
+            <MenuSquareIcon size={48} className="text-slate-300" />
           </SheetTrigger>
-          <SheetContent side={"left"} className="bg-slate-50">
+          <SheetContent
+            side={"left"}
+            className="bg-slate-950/90 text-slate-50 border-r border-[#7D87F2]"
+          >
             <SheetHeader className="pb-4">
-              <SheetTitle className="text-2xl text-slate-950">Menu</SheetTitle>
-              <SheetDescription className="text-xs">
+              <SheetTitle className="text-2xl text-slate-50">Menu</SheetTitle>
+              <SheetDescription className="text-xs text-slate-300">
                 Explore our site!
               </SheetDescription>
             </SheetHeader>
-            <Separator />
+            <Separator className="bg-[#7D87F2]" />
             <div className="flex flex-col gap-4 items-center py-4">
               {routes.map((route) => (
                 <SheetClose asChild key={route.href}>
@@ -132,8 +135,9 @@ const NavRoutes = () => {
                     className={cn(
                       `text-base tracking-widest`,
                       route.active
-                        ? "font-semibold text-slate-950"
-                        : "text-slate-500"
+                        ? "font-semibold bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text"
+                        : "text-slate-50"
+                      // route.active ? "font-semibold text-[#7D87F2]" : "text-slate-50"
                     )}
                   >
                     {route.label}
@@ -141,7 +145,7 @@ const NavRoutes = () => {
                 </SheetClose>
               ))}
             </div>
-            <Separator />
+            <Separator className="bg-[#7D87F2]" />
             <SheetFooter className="pt-4">
               <div className="flex justify-center items-center gap-8">
                 <Twitter size={25} />
@@ -172,16 +176,19 @@ const NavRoutes = () => {
               </AvatarFallback>
             </Avatar>
           </SheetTrigger>
-          <SheetContent side={"right"} className="bg-slate-50">
+          <SheetContent
+            side={"right"}
+            className="bg-slate-950/90 text-slate-50 border-r border-[#7D87F2]"
+          >
             <SheetHeader className="pb-4">
-              <SheetTitle className="text-2xl text-slate-950">
+              <SheetTitle className="text-2xl text-slate-50">
                 Profile
               </SheetTitle>
-              <SheetDescription className="text-xs">
+              <SheetDescription className="text-xs text-slate-300">
                 Make changes to your profile here. Click save when you're done.
               </SheetDescription>
             </SheetHeader>
-            <Separator />
+            <Separator className="bg-[#7D87F2]" />
             <div className="flex flex-col gap-4 items-center py-4">
               {profileRoutes.map((route) => (
                 <SheetClose asChild key={route.href}>
@@ -190,8 +197,8 @@ const NavRoutes = () => {
                     className={cn(
                       `text-base tracking-widest`,
                       route.active
-                        ? "font-semibold text-slate-950"
-                        : "text-slate-500"
+                        ? "font-semibold bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block text-transparent bg-clip-text"
+                        : "text-slate-50"
                     )}
                   >
                     {route.label}
@@ -199,7 +206,7 @@ const NavRoutes = () => {
                 </SheetClose>
               ))}
             </div>
-            <Separator />
+            <Separator className="bg-[#7D87F2]" />
             <SheetFooter>
               {/* <SheetClose asChild>
                 <Button type="submit">Save changes</Button>
